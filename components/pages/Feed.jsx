@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Card from '../ui/Card';
+import Toolbar from './Toolbar';
 
 import {
   IonPage,
@@ -40,10 +41,10 @@ const FeedCard = ({ title, type, text, author, authorAvatar, image }) => (
 const Feed = () => {
   const homeItems = Store.useState(getHomeItems);
   const [showNotifications, setShowNotifications] = useState(false);
-
   return (
     <IonPage>
-      <IonHeader>
+      <Toolbar title="Thrift"></Toolbar>
+      {/* <IonHeader>
         <IonToolbar>
           <IonTitle>Feed</IonTitle>
           <IonButtons slot="start">
@@ -55,7 +56,7 @@ const Feed = () => {
             </IonButton>
           </IonButtons>
         </IonToolbar>
-      </IonHeader>
+      </IonHeader> */}
       <IonContent className="ion-padding" fullscreen>
         <IonHeader collapse="condense">
           <IonToolbar>
