@@ -9,6 +9,7 @@ import {
   IonToggle,
   IonLabel,
 } from '@ionic/react';
+import Toolbar from './Toolbar';
 
 import Store from '../../store';
 import * as selectors from '../../store/selectors';
@@ -19,11 +20,7 @@ const Settings = () => {
 
   return (
     <IonPage>
-      <IonHeader>
-        <IonToolbar>
-          <IonTitle>Settings</IonTitle>
-        </IonToolbar>
-      </IonHeader>
+      <Toolbar title="Thrift"></Toolbar>
       <IonContent>
         <IonList>
           <IonItem>
